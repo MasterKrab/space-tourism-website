@@ -23,7 +23,8 @@
 <svelte:window on:click={open ? handleClose : undefined} />
 
 <button
-	class="button-close"
+	class="button"
+	class:button--close={open}
 	bind:this={button}
 	on:click={handleToggle}
 	type="button"
@@ -44,7 +45,7 @@
 </nav>
 
 <style lang="scss">
-	.button-close {
+	.button {
 		z-index: 100;
 
 		@media (hover: hover) {
@@ -57,6 +58,12 @@
 
 		@media screen and (min-width: 600px) {
 			display: none;
+		}
+
+		&--close {
+			position: fixed;
+			top: 2.188rem;
+			right: 1.5rem;
 		}
 	}
 
