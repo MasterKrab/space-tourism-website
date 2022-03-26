@@ -1,3 +1,3 @@
-const slugify = (text: string) => text.toLowerCase().replaceAll(' ', '-')
+const slugify = (text: string) => text.toLowerCase().replace(/-/, '-')
 
 export default slugify
