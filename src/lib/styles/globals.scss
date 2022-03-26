@@ -1,0 +1,90 @@
+:root {
+	--primary-color: #0b0d17;
+	--secondary-color: #d0d6f9;
+	--tertiary-color: #fff;
+	--quaternary-color: #979797;
+	--quinary-color: #302f2f;
+
+	--primary-font: 'Barlow', sans-serif;
+	--secondary-font: 'Barlow Condensed', sans-serif;
+	--tertiary-font: 'Bellefair', serif;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-image: var(--background-image-mobile);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 1.5rem;
+	font-family: var(--secondary-font);
+	color: var(--secondary-color);
+	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 0.5rem;
+		height: 0.5rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: var(--primary-color);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--secondary-color);
+		border-radius: 0.5rem;
+	}
+
+	@media screen and (min-width: 600px) {
+		background-image: var(--background-image-tablet);
+		padding-left: 2.438rem;
+		padding-right: 2.438rem;
+		min-height: 1024px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		background-image: var(--background-image-desktop);
+		padding-left: 3.438rem;
+		padding-right: 3.438rem;
+		min-height: auto;
+	}
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: var(--tertiary-font);
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
