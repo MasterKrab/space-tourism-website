@@ -11,10 +11,7 @@
 	export let bio: string
 </script>
 
-<Metadata
-	title="{name} | Meet your crew"
-	description={bio}
-/>
+<Metadata title="{name} | Meet your crew" description={bio} />
 
 <p class="top-text"><span class="top-text__number">02</span> Meet your crew</p>
 
@@ -39,7 +36,8 @@
 					class="list__link"
 					class:list__link--active={crewName === name}
 					href="/crew/{slugify(crewName)}"
-					aria-label={crewName}>{' '}</a
+					aria-label={crewName}
+					sveltekit:prefetch>{' '}</a
 				>
 			</li>
 		{/each}

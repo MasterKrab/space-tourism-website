@@ -31,7 +31,7 @@
 		{#key name}
 			{#each destinationsNames as destinationName}
 				<li class="list__item" class:list__item--active={destinationName === name}>
-					<a class="list__link" href={`/destination/${slugify(destinationName)}`}
+					<a class="list__link" href={`/destination/${slugify(destinationName)}`} sveltekit:prefetch
 						>{destinationName}</a
 					>
 				</li>

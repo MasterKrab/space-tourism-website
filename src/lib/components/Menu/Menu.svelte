@@ -37,7 +37,7 @@
 	<ul class="menu">
 		{#each routes as { name, href }, index}
 			<li class="menu__item" class:menu__item--active={isSameRoute($page.url.pathname, href)}>
-				<a {href}><span class="menu__index">{index < 9 ? `0${index}` : index}</span> {name}</a>
+				<a {href} sveltekit:prefetch><span class="menu__index">{index < 9 ? `0${index}` : index}</span> {name}</a>
 			</li>
 		{/each}
 	</ul>

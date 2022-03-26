@@ -27,7 +27,8 @@
 			<a
 				class="list__link"
 				class:list__link--active={technologieNames === name}
-				href={`/technology/${slugify(technologieNames)}`}>{index + 1}</a
+				href={`/technology/${slugify(technologieNames)}`}
+				sveltekit:prefetch>{index + 1}</a
 			>
 		</li>
 	{/each}
