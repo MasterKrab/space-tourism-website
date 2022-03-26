@@ -68,7 +68,7 @@
 	}
 
 	.navigation {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		right: 0;
 		z-index: 10;
@@ -83,6 +83,7 @@
 		}
 
 		@media screen and (max-width: 600px) {
+			position: fixed;
 			padding: 7.375rem 2rem;
 			width: 74%;
 			min-width: 254px;
