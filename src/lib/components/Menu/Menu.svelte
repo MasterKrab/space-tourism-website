@@ -26,6 +26,7 @@
 	class="button-close"
 	bind:this={button}
 	on:click={handleToggle}
+	type="button"
 	role="switch"
 	aria-checked={open}
 >
