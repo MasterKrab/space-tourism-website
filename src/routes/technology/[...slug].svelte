@@ -110,7 +110,6 @@
 			color: var(--tertiary-color);
 			border: 1px solid var(--quaternary-color);
 			border-radius: 50%;
-			line-height: 5.1rem;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
 				border-color 0.2s ease-in-out;
 
