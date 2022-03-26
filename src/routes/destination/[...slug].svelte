@@ -16,8 +16,13 @@
 
 {#key name}
 	<picture>
-		<source srcset="/assets/destination/image-{name}.webp" type="image/webp" />
-		<img in:scale class="image" src="/assets/destination/image-{name}.png" alt={name} />
+		<source srcset="/assets/destination/image-{name.toLowerCase()}.webp" type="image/webp" />
+		<img
+			in:scale
+			class="image"
+			src="/assets/destination/image-{name.toLowerCase()}.png"
+			alt={name}
+		/>
 	</picture>
 {/key}
 
