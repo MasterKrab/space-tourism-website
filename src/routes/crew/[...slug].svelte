@@ -43,7 +43,7 @@
 		{/each}
 	</ul>
 
-	{#key (role, name, bio)}
+	{#key [role, name, bio]}
 		<div class="info" in:fade>
 			<p class="pretitle">{role}</p>
 			<h1 class="title">{name}</h1>
